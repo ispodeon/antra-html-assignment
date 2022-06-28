@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+}
+
+input {
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.form-body form#form-act {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#form-act>input.half {
+    grid-column: span 6;
+}
+
+#form-act>input.half.marginal {
+    margin-right: 1rem;
+}
+
+#form-act>input.whole {
+    grid-column: span 12;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    padding: 0.5rem;
+    /* font-size: 17px; */
+    font-size: 1rem;
+    border: 1px solid #dddfe2;
+}
+
+input[type="text"]:focus {
+    /* border-color: #6265e4 !important;
+    box-shadow: 0 0 5px rgba(98, 101, 228, 1) !important;
+    border: none; */
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+    outline: none;
+}
+input[type="text"]:focus-visible {
+    /* border-color: #6265e4 !important;
+    box-shadow: 0 0 5px rgba(98, 101, 228, 1) !important;
+    border: none; */
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+    outline: none;
+}
+
+.submit-btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.register-span {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: white;
+    /* font-size: 19px; */
+    font-size: 1.3rem;
+}
+
+button.register-btn {
+    background-color: blue;
+    margin-right: 1rem;
+
+}
+
+button.signin-btn {
+    background-color: green;
+}
+
+.terms-agree {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+a {
+    color: lightblue;
+}
